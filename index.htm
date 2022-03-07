@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kelly Lei">
+    <title>Random redirector</title>
+ </head>
+ <body>
+   <script type = "text/javascript">
+   function getRandomInt(max) 
+     {return Math.floor(Math.random() * max);}
+/* You can change the webpage URLs
+   The webpages need to hosted on https sites 
+   If you want more than four links just create a new line using the same code as below */
+	 var webpages = ["https://www.wjx.cn/vj/mNosgx6.aspx",
+                         "https://www.wjx.cn/vj/hJ7YTbn.aspx",
+                         "https://www.wjx.cn/vj/YaB1Ygp.aspx",
+                         "https://www.wjx.cn/vj/Q2HS2FY.aspx",
+                         "https://www.wjx.cn/vj/hbvn7kw.aspx",
+                         "https://www.wjx.cn/vj/QTowS2F.aspx"]
+                        
+	 var max = webpages.length
+	 var random = getRandomInt(max)
+	 var url_redirect = webpages[random] 
+	 window.location.replace(url_redirect);
+   </script>  
+ </body>
+</html>
